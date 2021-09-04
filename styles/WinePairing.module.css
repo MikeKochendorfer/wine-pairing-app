@@ -1,0 +1,48 @@
+.wineWrapper {
+  border: 1px solid #eaeaea;
+  padding: 2rem;
+  border-radius: 1.5rem;
+}
+
+.resultGrid {
+  display: flex;
+  align-content: space-between;
+  padding: 1rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.wines {
+  padding: 1rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  padding: 1rem;
+  max-width: 400px;
+  align-self: center;
+}
+
+.seperator {
+  width: 1px;
+  background-color: #c9c9c9;
+  margin: 1rem;
+}
+
+@media (max-width: 515px) {
+  .resultGrid {
+    flex-direction: column;
+  }
+  .seperator {
+    display: none;
+  }
+  .wines {
+    padding: 0;
+  }
+  .description {
+    padding: 0;
+  }
+}

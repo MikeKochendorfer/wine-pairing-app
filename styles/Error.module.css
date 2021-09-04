@@ -1,0 +1,28 @@
+.error {
+  margin-top: 1rem;
+  max-width: 22rem;
+  background: #FFCCCC;
+  border-radius: 1rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  display: flex;
+  align-content: space-between;
+}
+
+.text {
+  padding-left: .75rem;
+  color: #8A0000
+}
+
+@media (max-width: 515px) {
+  .error {
+    position: relative;
+    font-size: 12px;
+    right: 0;
+    margin-top: 2rem;
+  }
+}

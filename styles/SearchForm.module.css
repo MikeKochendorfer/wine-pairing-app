@@ -23,7 +23,9 @@
   color: #fff;
 }
 
-.button:hover {
-  background-color: rgb(114, 114, 114);
-  cursor: pointer;
+@media (hover: hover) {
+  .button:hover {
+    background-color: rgb(114, 114, 114);
+    cursor: pointer;
+  }
 }

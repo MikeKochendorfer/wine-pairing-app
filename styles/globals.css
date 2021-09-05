@@ -18,3 +18,24 @@ a {
 input {
   font-size: 1rem;
 }
+
+p {
+  color: #660033;
+}
+
+ul {
+  color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+li {
+  padding: .25rem;
+  list-style: square;
+}
+
+@media (max-width: 340px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}

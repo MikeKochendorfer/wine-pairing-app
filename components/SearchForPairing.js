@@ -15,10 +15,9 @@ export default function SearchForPairing() {
     e.preventDefault();
     nProgress.start();
     if (inputs.food != "") {
-      let request = await fetch("api/wine-pairing", {
-        method: "post",
-        body: JSON.stringify(inputs),
-      }).then((data) => data);
+      let request = await fetch(`api/wine-pairing/${inputs.food}`).then(
+        (data) => data
+      );
       const result = await request.json();
       setWinePairing(result);
       nProgress.done(true);
@@ -32,7 +31,6 @@ export default function SearchForPairing() {
       <h1>🥂 🍷 Wine Pairing 🍷 🥂</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label} htmlFor="food">
-          {/* <span>What do I pair with </span> */}
           <input
             className={styles.input}
             name="food"
@@ -40,7 +38,6 @@ export default function SearchForPairing() {
             value={inputs.food}
             onChange={handleChange}
           />
-          {/* <span> ?</span> */}
         </label>
         <button className={styles.button} type="submit">
           Search for Pairing
